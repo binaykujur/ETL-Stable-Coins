@@ -35,11 +35,11 @@ df = df[columns]
 
 # Rename columns for better readability
 df.columns = [
-    "ID", "Symbol", "Name", "Current Price (USD)", "Market Cap (USD)", "Total Volume (USD)",
-    "High 24h (USD)", "Low 24h (USD)", "Price Change % (24h)", "Last Updated"
+    "ID", "Symbol", "Name", "Current_Price_USD", "Market_Cap_USD", "Total_Volume_USD",
+    "High_24h_USD", "Low_24h_USD", "Price_Change_24h", "Last_Updated"
 ]
 
 # Save DataFrame to a CSV file
-csv_file = "stablecoins_data.csv"
+csv_file = "Raw_Data/stablecoins_data.csv"
 df.to_csv(csv_file, index=False)
 print(f"Data saved to {csv_file}")
